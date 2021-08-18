@@ -39,6 +39,10 @@ module.exports = {
         ],
         exclude: /\.module\.scss$/,
       },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
     ],
   },
   devServer: {

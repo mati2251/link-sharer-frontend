@@ -5,7 +5,7 @@
     "main": "main.js",
     "scripts": {
         "build": "webpack build",
-        "start": "webpack serve --open",
+        "start": "webpack serve",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
@@ -30,7 +30,6 @@
         "sass": "^1.38.0",
         "sass-loader": "^12.1.0",
         "style-loader": "^3.2.1",
-        "to-string-loader": "^1.1.6",
         "ts-loader": "^9.2.5",
         "typescript": "^4.3.5",
         "webpack": "^5.50.0",
