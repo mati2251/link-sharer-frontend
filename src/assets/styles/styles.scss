@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500&family=Viga&display=swap');
+@import "colors";
 
 body{
   font-family: 'Hind Madurai', sans-serif;
+  margin: 0;
+}
+
+h1{
+  font-family: Viga;
+  margin: 0;
+  color: $primary-font-color;
+  font-size: 64px;
+}
+
+h1 span{
+  color: $primary-color;
 }

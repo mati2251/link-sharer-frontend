@@ -17,6 +17,19 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[contenthash].css',
+            },
+          },
+          'sass-loader',
+        ],
+        include: /\.module\.scss$/,
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
           // Creates `style` nodes from JS strings
           'style-loader',
           // Translates CSS into CommonJS
@@ -24,6 +37,7 @@ module.exports = {
           // Compiles Sass to CSS
           'sass-loader',
         ],
+        exclude: /\.module\.scss$/,
       },
     ],
   },
