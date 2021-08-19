@@ -10,7 +10,8 @@ class AppNavbarItem extends HTMLUListElement {
     style.setAttribute('href', styles);
     this.attachShadow({ mode: 'open' });
     const htmlParser = new HTMLParser(html);
-    htmlParser.changeValue('href', 'hre');
+    htmlParser.changeAllProperties('lle');
+    htmlParser.changeProperty('href', 'hre');
     this.shadowRoot.append(htmlParser.getHtmlAsHtmlElement(), style);
   }
 }
